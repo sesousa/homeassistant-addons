@@ -4,6 +4,10 @@ Base repository for Home Assistant Add-ons.
 
 [![Open your Home Assistant instance and show the add add-on repository dialog with a specific repository URL pre-filled.](https://my.home-assistant.io/badges/supervisor_add_addon_repository.svg)](https://my.home-assistant.io/redirect/supervisor_add_addon_repository/?repository_url=https%3A%2F%2Fgithub.com%2Fsesousa%2Fhomeassistant-addons)
 
+**If you like my Home Assistant Add-ons, you can buy me a coffee to help me maintain them.**
+
+[![Buy Sérgio's a coffee!][buymeacoffee-banner]][buymeacoffee-link]
+
 ## Add-ons
 
 This repository contains the following add-ons
@@ -87,3 +91,6 @@ Click the Home Assistant My button below to open the add-on on your Home Assista
 
 [pawns-referral-banner]: https://cdn.pawns.app/images/b/468.jpg
 [pawns-referral-link]: https://pawns.app/?r=2267482
+
+[buymeacoffee-banner]: https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png
+[buymeacoffee-link]: https://www.buymeacoffee.com/sergiosousa

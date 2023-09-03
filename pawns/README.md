@@ -23,6 +23,8 @@ _Make passive money online by completing surveys and sharing your internet._
 
 [![Register through this link to earn $1!][pawns-referral-banner]][pawns-referral-link]
 
+[![Buy Sérgio's a coffee!][buymeacoffee-banner]][buymeacoffee-link]
+
 [aarch64-shield]: https://img.shields.io/badge/aarch64-yes-green.svg
 [amd64-shield]: https://img.shields.io/badge/amd64-yes-green.svg
 [armhf-shield]: https://img.shields.io/badge/armhf-yes-green.svg
@@ -34,3 +36,6 @@ _Make passive money online by completing surveys and sharing your internet._
 [project-stage-shield]: https://img.shields.io/badge/project%20stage-experimental-yellow.svg
 [pawns-referral-banner]: https://cdn.pawns.app/images/b/468.jpg
 [pawns-referral-link]: https://pawns.app/?r=2267482
+
+[buymeacoffee-banner]: https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png
+[buymeacoffee-link]: https://www.buymeacoffee.com/sergiosousa

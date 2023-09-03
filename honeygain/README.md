@@ -23,6 +23,8 @@ _With Honeygain, you can make money by simply sharing your Internet._
 
 Register through this link to earn $5! [Register Here!][honeygain-register-link]
 
+[![Buy Sérgio's a coffee!][buymeacoffee-banner]][buymeacoffee-link]
+
 [aarch64-shield]: https://img.shields.io/badge/aarch64-yes-green.svg
 [amd64-shield]: https://img.shields.io/badge/amd64-yes-green.svg
 [armhf-shield]: https://img.shields.io/badge/armhf-yes-green.svg
@@ -34,3 +36,6 @@ Register through this link to earn $5! [Register Here!][honeygain-register-link]
 
 [honeygain-referral-link]: https://r.honeygain.me/SERGI422D9
 [honeygain-register-link]: https://dashboard.honeygain.com/ref/SERGI422D9
+
+[buymeacoffee-banner]: https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png
+[buymeacoffee-link]: https://www.buymeacoffee.com/sergiosousa
