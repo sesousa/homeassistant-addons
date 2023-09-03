@@ -16,6 +16,9 @@ This repository contains the following add-ons
 ![Supports armv7 Architecture][armv7-shield]
 ![Supports i386 Architecture][i386-shield]
 
+![Project Stage][project-stage-shield]
+![Project Maintenance][maintenance-shield]
+
 _With Honeygain, you can make money by simply sharing your Internet._
 
 Click the Home Assistant My button below to open the add-on on your Home Assistant instance.
@@ -46,5 +49,7 @@ Notes to developers after forking or using the github template feature:
 [armhf-shield]: https://img.shields.io/badge/armhf-yes-green.svg
 [armv7-shield]: https://img.shields.io/badge/armv7-yes-green.svg
 [i386-shield]: https://img.shields.io/badge/i386-yes-green.svg
+[maintenance-shield]: https://img.shields.io/maintenance/yes/2023.svg
+[project-stage-shield]: https://img.shields.io/badge/project%20stage-experimental-yellow.svg
 
 ---

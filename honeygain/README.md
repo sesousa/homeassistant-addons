@@ -27,8 +27,7 @@ Register through this link to earn $5! [Register Here!](https://dashboard.honeyg
 [amd64-shield]: https://img.shields.io/badge/amd64-yes-green.svg
 [armhf-shield]: https://img.shields.io/badge/armhf-yes-green.svg
 [armv7-shield]: https://img.shields.io/badge/armv7-yes-green.svg
-[github-sponsors]: https://github.com/sponsors/ssousa
 [i386-shield]: https://img.shields.io/badge/i386-yes-green.svg
-[maintenance-shield]: https://img.shields.io/maintenance/yes/2023.svg
 
+[maintenance-shield]: https://img.shields.io/maintenance/yes/2023.svg
 [project-stage-shield]: https://img.shields.io/badge/project%20stage-experimental-yellow.svg
