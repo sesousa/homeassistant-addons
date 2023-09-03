@@ -25,6 +25,10 @@ Click the Home Assistant My button below to open the add-on on your Home Assista
 
 [![Open this add-on in your Home Assistant instance.](https://my.home-assistant.io/badges/supervisor_addon.svg)](https://my.home-assistant.io/redirect/supervisor_addon/?addon=fa5c61f3_honeygain&repository_url=https%3A%2F%2Fgithub.com%2Fsesousa%2Fhomeassistant-addons)
 
+**You can check more details on the [installation-guide][honeygain-referral-link].**
+
+Register through this link to earn $5! [Register Here!][honeygain-register-link]
+
 
 <!--
 
@@ -45,6 +49,31 @@ Notes to developers after forking or using the github template feature:
 - Do awesome stuff!
  -->
 
+---
+
+### [Pawns.app](./pawns)
+
+![Supports aarch64 Architecture][aarch64-shield]
+![Supports amd64 Architecture][amd64-shield]
+![Supports armhf Architecture][armhf-shield]
+![Supports armv7 Architecture][armv7-shield]
+![Supports i386 Architecture][i386-shield]
+
+![Project Stage][project-stage-shield]
+![Project Maintenance][maintenance-shield]
+
+_Make passive money online by completing surveys and sharing your internet._
+
+Click the Home Assistant My button below to open the add-on on your Home Assistant instance.
+
+[![Open this add-on in your Home Assistant instance.](https://my.home-assistant.io/badges/supervisor_addon.svg)](https://my.home-assistant.io/redirect/supervisor_addon/?addon=fa5c61f3_pawns&repository_url=https%3A%2F%2Fgithub.com%2Fsesousa%2Fhomeassistant-addons)
+
+**You can check more details on the [installation-guide][pawns-referral-link].**
+
+[![Register through this link to earn $1!][pawns-referral-banner]][pawns-referral-link]
+
+---
+
 [aarch64-shield]: https://img.shields.io/badge/aarch64-yes-green.svg
 [amd64-shield]: https://img.shields.io/badge/amd64-yes-green.svg
 [armhf-shield]: https://img.shields.io/badge/armhf-yes-green.svg
@@ -53,4 +82,8 @@ Notes to developers after forking or using the github template feature:
 [maintenance-shield]: https://img.shields.io/maintenance/yes/2023.svg
 [project-stage-shield]: https://img.shields.io/badge/project%20stage-experimental-yellow.svg
 
----
+[honeygain-referral-link]: https://r.honeygain.me/SERGI422D9
+[honeygain-register-link]: https://dashboard.honeygain.com/ref/SERGI422D9
+
+[pawns-referral-banner]: https://cdn.pawns.app/images/b/468.jpg
+[pawns-referral-link]: https://pawns.app/?r=2267482

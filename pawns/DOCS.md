@@ -1,4 +1,4 @@
-# Home Assistant Community Add-on: Honeygain
+# Home Assistant Community Add-on: Pawns.app
 
 ## Installation
 
@@ -8,17 +8,17 @@ comparison to installing any other Home Assistant add-on.
 - Click the Home Assistant My button below to open the add-on on your Home
   Assistant instance.
 
-  [![Open this add-on in your Home Assistant instance.](https://my.home-assistant.io/badges/supervisor_addon.svg)](https://my.home-assistant.io/redirect/supervisor_addon/?addon=fa5c61f3_honeygain&repository_url=https%3A%2F%2Fgithub.com%2Fsesousa%2Fhomeassistant-addons)
+  [![Open this add-on in your Home Assistant instance.](https://my.home-assistant.io/badges/supervisor_addon.svg)](https://my.home-assistant.io/redirect/supervisor_addon/?addon=fa5c61f3_pawns&repository_url=https%3A%2F%2Fgithub.com%2Fsesousa%2Fhomeassistant-addons)
 
 - Click the "Install" button to install the add-on.
-- Configure the "Honeygain" add-on.
-- Start the "Honeygain" add-on
-- Check the logs of the "Honeygain" add-on to see if everything went well.
+- Configure the "Pawns.app" add-on.
+- Start the "Pawns.app" add-on
+- Check the logs of the "Pawns.app" add-on to see if everything went well.
 
 ## Configuration
 
-- Register your Honeygain account [here][honeygain-register-link].
-- Just add your **Email**, **Password** that you've just register on the Honeygain website, and choose a desired **Device** name (e.g.: my-device), add these details on the **Configuration** Tab and press init!
+- Register your Pawns.app account [here](https://pawns.app/?r=2267482).
+- Just add your **Email**, **Password** that you've just register on the Pawns.app website, and choose a desired **Device** name (e.g.: my-device), add these details on the **Configuration** Tab and press init!
 - Start earning!
 
 ### Option: `log_level`
@@ -41,27 +41,15 @@ you are troubleshooting.
 
 ### Option: `email`
 
-The email you use to login on the Honeygain Dashboard.
+The email you use to login on the Pawns.app Dashboard.
 
 ### Option: `password`
 
-The password you use to login on the Honeygain Dashboard.
+The password you use to login on the Pawns.app Dashboard.
 
 ### Option: `device`
 
-A desired device name that identify this instance, and will be seen on the Honeygain Dashboard, on the "My active devices" section.
-
-## Easy way to earn passive income
-
-Start earning with Honeygain, and use the money to pay for a streaming platform subscription, unlock exclusive content on free-to-play video games, or simply treat yourself with a little online shopping spree.
-
-## Earn without compromising security
-
-Honeygain ensures that your internet traffic is only used by trusted partners, and the app never asks for or gains access to the storage of your device.
-
-## Know exactly what your Internet is used for
-
-Once you start using Honeygain, your devices act like view towers and help world-famous businesses access the World Wide Web without having to worry about location-based restrictions or censorship.
+A desired device name that identify this instance, and will be seen on the Pawns.app Dashboard, on the "My active devices" section.
 
 ## Support
 
@@ -129,7 +117,4 @@ SOFTWARE.
 
 ## Disclaimer
 
-We are not affiliated, associated, authorized, endorsed by, or in any way officially connected with the Honeygain company, or any of its subsidiaries or its affiliates. The official Honeygain website can be found at [https://www.honeygain.com][honeygain-referral-link].
-
-[honeygain-referral-link]: https://r.honeygain.me/SERGI422D9
-[honeygain-register-link]: https://dashboard.honeygain.com/ref/SERGI422D9
+We are not affiliated, associated, authorized, endorsed by, or in any way officially connected with the Pawns.app company, or any of its subsidiaries or its affiliates. The official Pawns.app website can be found at [https://www.pawns.app](https://pawns.app/?r=2267482).

@@ -1,4 +1,4 @@
-# Home Assistant Community Add-on: Honeygain
+# Home Assistant Community Add-on: Pawns.app
 
 ![Supports aarch64 Architecture][aarch64-shield]
 ![Supports amd64 Architecture][amd64-shield]
@@ -15,22 +15,22 @@
 
 ## About
 
-This Honeygain add-on allows you to start earning a passive income effortlessly.
+This Pawns.app add-on allows you to start earning a passive income effortlessly.
 
-_With Honeygain, you can make money by simply sharing your Internet._
+_Make passive money online by completing surveys and sharing your internet._
 
-**You can check more details on the [installation-guide][honeygain-referral-link].**
+**You can check more details on the [installation-guide][pawns-referral-link].**
 
-Register through this link to earn $5! [Register Here!][honeygain-register-link]
+[![Register through this link to earn $1!][pawns-referral-banner]][pawns-referral-link]
 
 [aarch64-shield]: https://img.shields.io/badge/aarch64-yes-green.svg
 [amd64-shield]: https://img.shields.io/badge/amd64-yes-green.svg
 [armhf-shield]: https://img.shields.io/badge/armhf-yes-green.svg
 [armv7-shield]: https://img.shields.io/badge/armv7-yes-green.svg
+[github-sponsors]: https://github.com/sponsors/ssousa
 [i386-shield]: https://img.shields.io/badge/i386-yes-green.svg
-
 [maintenance-shield]: https://img.shields.io/maintenance/yes/2023.svg
-[project-stage-shield]: https://img.shields.io/badge/project%20stage-experimental-yellow.svg
 
-[honeygain-referral-link]: https://r.honeygain.me/SERGI422D9
-[honeygain-register-link]: https://dashboard.honeygain.com/ref/SERGI422D9
+[project-stage-shield]: https://img.shields.io/badge/project%20stage-experimental-yellow.svg
+[pawns-referral-banner]: https://cdn.pawns.app/images/b/468.jpg
+[pawns-referral-link]: https://pawns.app/?r=2267482

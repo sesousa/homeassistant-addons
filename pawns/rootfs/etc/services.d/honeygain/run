@@ -1,0 +1,17 @@
+#!/usr/bin/with-contenv bashio
+# shellcheck shell=bash
+# ==============================================================================
+# Run the Pawns service
+# s6-overlay docs: https://github.com/just-containers/s6-overlay
+# ==============================================================================
+declare -a parameters
+
+bashio::log.info "Starting Pawns.app Service..."
+
+parameters+=(-email=$(bashio::config 'email'))
+parameters+=(-password=$(bashio::config 'password'))
+parameters+=(-device-name=$(bashio::config 'device'))
+parameters+=(-accept-tos)
+
+/opt/pawns/pawns-cli "${parameters[@]}"
+
