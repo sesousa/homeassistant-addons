@@ -1,0 +1,22 @@
+#!/usr/bin/with-contenv bashio
+# shellcheck shell=bash
+# ==============================================================================
+# Run the Honeygain service
+# s6-overlay docs: https://github.com/just-containers/s6-overlay
+# ==============================================================================
+declare -a parameters
+
+bashio::log.info "Starting Honeygain Service..."
+
+parameters+=(-tou-accept)
+parameters+=(-email $(bashio::config 'email'))
+parameters+=(-pass $(bashio::config 'password'))
+parameters+=(-device $(bashio::config 'device'))
+
+if [[ $(uname -m) != "x86_64" ]]; then
+  bashio::log.debug "Running with Compatibility x86_64 Architecture."
+  /usr/bin/qemu-x86_64 /opt/honeygain/honeygain "${parameters[@]}"
+else
+  bashio::log.debug "Running with Native x86_64 Architecture."
+  /opt/honeygain/honeygain "${parameters[@]}"
+fi

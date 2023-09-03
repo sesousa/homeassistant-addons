@@ -1,0 +1,21 @@
+name: "Honeygain"
+description: "With Honeygain, you can make money by simply sharing your Internet."
+version: "1.0.0"
+slug: "honeygain"
+url: "https://r.honeygain.me/SERGI422D9"
+arch:
+  - armhf
+  - armv7
+  - aarch64
+  - amd64
+  - i386
+init: false
+options:
+  email: null
+  password: null
+  device: null
+schema:
+  log_level: list(trace|debug|info|notice|warning|error|fatal)?
+  email: "str"
+  password: "password"
+  device: "str"
