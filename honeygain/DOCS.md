@@ -5,10 +5,10 @@
 The installation of this add-on is pretty straightforward and not different in
 comparison to installing any other Home Assistant add-on.
 
-<!-- - Click the Home Assistant My button below to open the add-on on your Home
+- Click the Home Assistant My button below to open the add-on on your Home
   Assistant instance.
 
-  [![Open this add-on in your Home Assistant instance.](https://my.home-assistant.io/badges/supervisor_addon.svg)](https://my.home-assistant.io/redirect/supervisor_addon/?addon=Honeygain&repository_url=https%3A%2F%2Fgithub.com%2Fsesousa%2Fhomeassistant-addons%2Fhoneygain) -->
+  [![Open this add-on in your Home Assistant instance.](https://my.home-assistant.io/badges/supervisor_addon.svg)](https://my.home-assistant.io/redirect/supervisor_addon/?addon=fa5c61f3_honeygain&repository_url=https%3A%2F%2Fgithub.com%2Fsesousa%2Fhomeassistant-addons)
 
 - Click the "Install" button to install the add-on.
 - Configure the "Honeygain" add-on.

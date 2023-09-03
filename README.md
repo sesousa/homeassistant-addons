@@ -21,9 +21,9 @@ This repository contains the following add-ons
 
 _With Honeygain, you can make money by simply sharing your Internet._
 
-<!-- Click the Home Assistant My button below to open the add-on on your Home Assistant instance.
+Click the Home Assistant My button below to open the add-on on your Home Assistant instance.
 
-[![Open this add-on in your Home Assistant instance.](https://my.home-assistant.io/badges/supervisor_addon.svg)](https://my.home-assistant.io/redirect/supervisor_addon/?addon=a0d7b954_honeygain&repository_url=https%3A%2F%2Fgithub.com%2Fsesousa%2Fhomeassistant-addons) -->
+[![Open this add-on in your Home Assistant instance.](https://my.home-assistant.io/badges/supervisor_addon.svg)](https://my.home-assistant.io/redirect/supervisor_addon/?addon=fa5c61f3_honeygain&repository_url=https%3A%2F%2Fgithub.com%2Fsesousa%2Fhomeassistant-addons)
 
 
 <!--
