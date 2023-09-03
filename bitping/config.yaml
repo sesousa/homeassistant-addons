@@ -1,0 +1,14 @@
+name: "Bitping"
+description: "Install a Bitping node and earn passive income."
+version: "1.0.0"
+slug: "bitping"
+url: "https://app.bitping.com?r=kaV5lI3e"
+arch:
+  - armhf
+  - armv7
+  - aarch64
+  - amd64
+  - i386
+init: false
+schema:
+  log_level: list(trace|debug|info|notice|warning|error|fatal)?
