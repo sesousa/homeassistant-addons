@@ -1,0 +1,11 @@
+configuration:
+  email:
+    name: Email Bitping
+    description: The email that you use to login to the Bitping dashboard.
+  password:
+    name: Senha Bitping
+    description: >-
+      The Password that you use to login to the Bitping dashboard.
+  log_level:
+    name: Nível de Log
+    description: The desired log level that can be seen on the logs.
