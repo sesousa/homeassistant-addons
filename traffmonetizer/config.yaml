@@ -1,0 +1,20 @@
+name: "TraffMonetizer"
+description: "Share your Internet connection and make money online."
+version: "1.0.0"
+slug: "traffmonetizer"
+url: "https://traffmonetizer.com/?aff=1441302"
+arch:
+  - armhf
+  - armv7
+  - aarch64
+  - amd64
+  - i386
+init: false
+options:
+  token: null
+  device: "ha-device"
+schema:
+  log_level: list(trace|debug|info|notice|warning|error|fatal)?
+  token: "str"
+  device: "str?"
+image: "ghcr.io/sesousa/{arch}-addon-traffmonetizer"

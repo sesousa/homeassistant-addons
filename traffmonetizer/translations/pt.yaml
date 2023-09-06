@@ -1,0 +1,12 @@
+configuration:
+  token:
+    name: Token
+    description: >-
+      The token that can be found on yout TraffMonetizer Dashboard.
+  device:
+    name: Dispositivo
+    description: >-
+      The desired Device name that you want to identify this system on the TraffMonetizer dashboard.
+  log_level:
+    name: Nível de Log
+    description: The desired log level that can be seen on the logs.

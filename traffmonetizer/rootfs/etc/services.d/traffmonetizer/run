@@ -1,0 +1,17 @@
+#!/usr/bin/with-contenv bashio
+# shellcheck shell=bash
+# ==============================================================================
+# Run the TraffMonetizer service
+# s6-overlay docs: https://github.com/just-containers/s6-overlay
+# ==============================================================================
+declare -a parameters
+
+parameters+=(start)
+parameters+=(accept)
+parameters+=(--token $(bashio::config 'token'))
+parameters+=(--device-name $(bashio::config 'device'))
+
+bashio::log.info "Starting TraffMonetizer Service..."
+
+## Call the app with parameters
+/app/Cli ${parameters[@]}
