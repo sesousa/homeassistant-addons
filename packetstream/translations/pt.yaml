@@ -1,0 +1,7 @@
+configuration:
+  cid:
+    name: Customer ID (CID)
+    description: "The Customer ID that can be found on your referral link. (e.g.: https://packetstream.io/?psr=5hX3, CID = 5hX3)."
+  log_level:
+    name: Nível de Log
+    description: The desired log level that can be seen on the logs.

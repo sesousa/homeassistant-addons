@@ -1,0 +1,11 @@
+#!/usr/bin/with-contenv bashio
+# shellcheck shell=bash
+# ==============================================================================
+# Run the PacketStream service
+# s6-overlay docs: https://github.com/just-containers/s6-overlay
+# ==============================================================================
+bashio::log.info "Starting PacketStream Service..."
+
+export CID=$(bashio::config 'cid')
+
+/usr/local/bin/pslauncher

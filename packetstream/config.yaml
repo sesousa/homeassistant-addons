@@ -1,0 +1,18 @@
+name: "PacketStream"
+description: "Make passive money online by sharing bandwidth on the PacketStream network."
+version: "1.0.0"
+slug: "packetstream"
+url: "https://packetstream.io/?psr=5hX3"
+arch:
+  - armhf
+  - armv7
+  - aarch64
+  - amd64
+  - i386
+init: false
+options:
+  cid: null
+schema:
+  log_level: list(trace|debug|info|notice|warning|error|fatal)?
+  cid: "str"
+image: "ghcr.io/sesousa/{arch}-addon-packetstream"
