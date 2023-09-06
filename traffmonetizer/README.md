@@ -37,7 +37,7 @@ If you like this add-on, you can help me supporting it, just buy me a coffee!
 
 [project-stage-shield]: https://img.shields.io/badge/project%20stage-experimental-yellow.svg
 [app-referral-link]: https://traffmonetizer.com/?aff=1441302
-[app-referral-banner]: https://app.traffmonetizer.com/assets/images/referral-banner.png
+[app-referral-banner]: https://raw.githubusercontent.com/sesousa/homeassistant-addons/main/traffmonetizer/banner.png
 
 [buymeacoffee-banner]: https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png
 [buymeacoffee-link]: https://www.buymeacoffee.com/sergiosousa
