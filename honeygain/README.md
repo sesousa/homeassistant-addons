@@ -19,9 +19,11 @@ This Honeygain add-on allows you to start earning a passive income effortlessly.
 
 _With Honeygain, you can make money by simply sharing your Internet._
 
-**You can check more details on the [installation-guide][honeygain-referral-link].**
+**You can check more details on the [installation-guide][app-referral-link].**
 
-Register through this link to earn $5! [Register Here!][honeygain-register-link]
+Register through this link to earn $5! [Register Here!][app-register-link]
+
+If you like this add-on, you can help me supporting it, just buy me a coffee!
 
 [![Buy Sérgio's a coffee!][buymeacoffee-banner]][buymeacoffee-link]
 
@@ -34,8 +36,8 @@ Register through this link to earn $5! [Register Here!][honeygain-register-link]
 [maintenance-shield]: https://img.shields.io/maintenance/yes/2023.svg
 [project-stage-shield]: https://img.shields.io/badge/project%20stage-experimental-yellow.svg
 
-[honeygain-referral-link]: https://r.honeygain.me/SERGI422D9
-[honeygain-register-link]: https://dashboard.honeygain.com/ref/SERGI422D9
+[app-referral-link]: https://r.honeygain.me/SERGI422D9
+[app-register-link]: https://dashboard.honeygain.com/ref/SERGI422D9
 
 [buymeacoffee-banner]: https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png
 [buymeacoffee-link]: https://www.buymeacoffee.com/sergiosousa
