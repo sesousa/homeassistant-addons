@@ -17,8 +17,8 @@ comparison to installing any other Home Assistant add-on.
 
 ## Configuration
 
-- Register your Pawns.app account [here](https://pawns.app/?r=2267482).
-- Just add your **Email**, **Password** that you've just register on the Pawns.app website, and choose a desired **Device** name (e.g.: my-device), add these details on the **Configuration** Tab and press init!
+- Register your Pawns.app account [here][app-referral-link].
+- Just add your **Email**, **Password** that you've just register on the Pawns.app website, and choose a desired **Device** name (e.g.: ha-device), add these details on the **Configuration** Tab and press init!
 - Start earning!
 
 ### Option: `log_level`
@@ -79,7 +79,7 @@ Thank you for being involved! :heart_eyes:
 
 ## Authors & contributors
 
-The original setup of this repository is by [Sérgio Sousa](https://github.com/sesousa).
+The original setup of this repository is by [Sérgio Sousa][github-repo].
 
 For a full list of all authors and contributors,
 check [the contributor's page](https://github.com/sesousa/homeassistant-addons/graphs/contributors).
@@ -89,7 +89,7 @@ check [the contributor's page](https://github.com/sesousa/homeassistant-addons/g
 Want some more functionality to your Home Assistant instance?
 
 We have created multiple add-ons for Home Assistant. For a full list, check out
-our [GitHub Repository](https://github.com/sesousa).
+our [GitHub Repository][github-repo].
 
 ## License
 
@@ -117,4 +117,7 @@ SOFTWARE.
 
 ## Disclaimer
 
-We are not affiliated, associated, authorized, endorsed by, or in any way officially connected with the Pawns.app company, or any of its subsidiaries or its affiliates. The official Pawns.app website can be found at [https://www.pawns.app](https://pawns.app/?r=2267482).
+We are not affiliated, associated, authorized, endorsed by, or in any way officially connected with the Pawns.app company, or any of its subsidiaries or its affiliates. The official Pawns.app website can be found at [https://www.pawns.app][app-referral-link].
+
+[github-repo]: https://github.com/sesousa
+[app-referral-link]: https://pawns.app/?r=2267482

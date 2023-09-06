@@ -23,6 +23,8 @@ _Make passive money online by completing surveys and sharing your internet._
 
 [![Register through this link to earn $1!][pawns-referral-banner]][pawns-referral-link]
 
+If you like this add-on, you can help me supporting it, just buy me a coffee!
+
 [![Buy Sérgio's a coffee!][buymeacoffee-banner]][buymeacoffee-link]
 
 [aarch64-shield]: https://img.shields.io/badge/aarch64-yes-green.svg

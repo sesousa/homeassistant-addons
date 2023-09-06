@@ -14,4 +14,3 @@ parameters+=(-device-name=$(bashio::config 'device'))
 parameters+=(-accept-tos)
 
 /opt/pawns/pawns-cli "${parameters[@]}"
-

@@ -13,9 +13,10 @@ init: false
 options:
   email: null
   password: null
-  device: null
+  device: "ha-device"
 schema:
   log_level: list(trace|debug|info|notice|warning|error|fatal)?
   email: "str"
   password: "password"
-  device: "str"
+  device: "str?"
+image: "ghcr.io/sesousa/{arch}-addon-pawns"
