@@ -2,11 +2,11 @@ configuration:
   email:
     name: Email
     description: >-
-      The email that you use to login on Repocket Dashboard.
+      O email que usa para se ligar ao Dashboard do Repocket.
   key:
-    name: Api Key
+    name: Chave Api
     description: >-
-      The api key that can be found on the Repocket Dashboard on the 'Sell Internet' tab.
+      A chave da Api que pode ser encontrada no Dashboard do Repocket na secção 'Sell Internet'.
   log_level:
     name: Nível de Log
-    description: The desired log level that can be seen on the logs.
+    description: O nível desejado que pode ser visto nos logs.
