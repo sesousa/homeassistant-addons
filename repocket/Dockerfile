@@ -109,9 +109,8 @@ RUN \
 # Copy root filesystem
 COPY rootfs /
 
-RUN chmod a+x /installer/main.sh
-
-RUN /installer/main.sh
+RUN chmod a+x /installer/main.sh \
+  && /installer/main.sh
 
 ENV NODE_ENV=production
 
