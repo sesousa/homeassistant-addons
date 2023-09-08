@@ -5,10 +5,8 @@ slug: "repocket"
 url: "https://link.repocket.co/yVHv"
 arch:
   - armhf
-  - armv7
   - aarch64
   - amd64
-  - i386
 init: false
 apparmor: true
 options:
