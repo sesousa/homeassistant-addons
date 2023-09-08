@@ -1,0 +1,12 @@
+configuration:
+  email:
+    name: Email
+    description: >-
+      The email that you use to login on Repocket Dashboard.
+  key:
+    name: Api Key
+    description: >-
+      The api key that can be found on the Repocket Dashboard on the 'Sell Internet' tab.
+  log_level:
+    name: Nível de Log
+    description: The desired log level that can be seen on the logs.

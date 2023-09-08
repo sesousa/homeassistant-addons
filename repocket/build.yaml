@@ -1,0 +1,14 @@
+build_from:
+  aarch64: "ghcr.io/home-assistant/aarch64-base:3.18"
+  amd64: "ghcr.io/home-assistant/amd64-base:3.18"
+  armhf: "ghcr.io/home-assistant/armhf-base:3.18"
+  armv7: "ghcr.io/home-assistant/armv7-base:3.18"
+  i386: "ghcr.io/home-assistant/i386-base:3.18"
+labels:
+  org.opencontainers.image.title: "Home Assistant Add-on: Repocket add-on"
+  org.opencontainers.image.description: "Get Paid For Your Unused Internet."
+  org.opencontainers.image.source: "https://github.com/sesousa/homeassistant-addons/repocket"
+  org.opencontainers.image.licenses: "MIT License"
+args:
+  TEMPIO_VERSION: "2021.09.0"
+image: "srsdh/repocket-{arch}-addon"

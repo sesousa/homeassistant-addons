@@ -104,6 +104,29 @@ Click the Home Assistant My button below to open the add-on on your Home Assista
 
 ---
 
+### [Repocket](./repocket)
+
+![Supports aarch64 Architecture][aarch64-shield]
+![Supports amd64 Architecture][amd64-shield]
+![Supports armhf Architecture][armhf-shield]
+![Supports armv7 Architecture][armv7-shield]
+![Supports i386 Architecture][i386-shield]
+
+![Project Stage][project-stage-shield]
+![Project Maintenance][maintenance-shield]
+
+_Get Paid For Your Unused Internet._
+
+Click the Home Assistant My button below to open the add-on on your Home Assistant instance.
+
+[![Open this add-on in your Home Assistant instance.](https://my.home-assistant.io/badges/supervisor_addon.svg)](https://my.home-assistant.io/redirect/supervisor_addon/?addon=fa5c61f3_repocket&repository_url=https%3A%2F%2Fgithub.com%2Fsesousa%2Fhomeassistant-addons)
+
+**You can check more details on the [installation-guide][repocket-referral-link].**
+
+[Register through this link to earn $5!][repocket-referral-link]
+
+---
+
 ### [TraffMonetizer](./traffmonetizer)
 
 ![Supports aarch64 Architecture][aarch64-shield]
@@ -147,6 +170,8 @@ Click the Home Assistant My button below to open the add-on on your Home Assista
 
 [pawns-referral-banner]: https://cdn.pawns.app/images/b/468.jpg
 [pawns-referral-link]: https://pawns.app/?r=2267482
+
+[repocket-referral-link]: https://link.repocket.co/yVHv
 
 [traffmonetizer-referral-link]: https://traffmonetizer.com/?aff=1441302
 [traffmonetizer-referral-banner]: https://raw.githubusercontent.com/sesousa/homeassistant-addons/main/traffmonetizer/banner.png

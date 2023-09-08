@@ -1,0 +1,21 @@
+name: "Repocket"
+description: "Get Paid For Your Unused Internet."
+version: "1.0.0"
+slug: "repocket"
+url: "https://link.repocket.co/yVHv"
+arch:
+  - armhf
+  - armv7
+  - aarch64
+  - amd64
+  - i386
+init: false
+apparmor: true
+options:
+  email: null
+  key: null
+schema:
+  log_level: list(trace|debug|info|notice|warning|error|fatal)?
+  email: "str"
+  key: "str"
+image: "ghcr.io/sesousa/{arch}-addon-repocket"
