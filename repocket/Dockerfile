@@ -1,7 +1,7 @@
 ARG BUILD_FROM
 FROM $BUILD_FROM
 
-ENV NODE_VERSION 16.20.0
+ENV NODE_VERSION 18.17.1
 
 RUN addgroup -g 1000 node \
     && adduser -u 1000 -G node -s /bin/sh -D node \
@@ -13,7 +13,7 @@ RUN addgroup -g 1000 node \
       && case "${alpineArch##*-}" in \
         x86_64) \
           ARCH='x64' \
-          CHECKSUM="b3f80fe7d0f1af6fe25ffedc7237ca519965d08fc800eab29cf45cd5b90cdb26" \
+          CHECKSUM="a67f0b51f0951382709abb5613ee577b5af648752ed363ae32411214041f4e73" \
           ;; \
         *) ;; \
       esac \
@@ -109,9 +109,9 @@ RUN \
 # Copy root filesystem
 COPY rootfs /
 
+ENV NODE_ENV=production
+
 RUN chmod a+x /installer/main.sh \
   && /installer/main.sh
-
-ENV NODE_ENV=production
 
 ENV RP_DOCKER=true
