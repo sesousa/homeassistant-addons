@@ -4,131 +4,14 @@
 # Run the Bitping service
 # s6-overlay docs: https://github.com/just-containers/s6-overlay
 # ==============================================================================
-declare -a parameters
-declare result
-declare credentials_dir
-declare credentials_file
-declare credentials_json_data
-
-function bitping::login() {
-  local login_api
-  local payload
-  local response
-  local status
-  local error
-
-  login_api="https://api.bitping.com/users/login"
-
-  payload=$(\
-    bashio::var.json \
-        email "$(bashio::config 'email')" \
-        password "$(bashio::config 'password')" \
-  )
-
-  if ! response=$(curl --silent --show-error \
-      --write-out '\n%{http_code}' --request "POST" \
-      -H "Content-Type: application/json" \
-      -d "${payload}" \
-      "${login_api}"
-  ); then
-      bashio::log.debug "${response}"
-      bashio::log.error "Something went wrong contacting the API"
-      return "${__BASHIO_EXIT_NOK}"
-  fi
-
-  status=${response##*$'\n'}
-  response=${response%"$status"}
-
-  bashio::log.debug "Requested API resource: ${login_api}"
-  bashio::log.debug "Request method: POST"
-  bashio::log.debug "Request data: ${payload}"
-  bashio::log.debug "API HTTP Response code: ${status}"
-  bashio::log.debug "API Response: ${response}"
-
-  if [[ "${status}" -eq 401 ]]; then
-    bashio::log.error "Unable to authenticate with the API, permission denied"
-    return "${__BASHIO_EXIT_NOK}"
-  fi
-
-  if [[ "${status}" -eq 404 ]]; then
-    bashio::log.error "Requested resource ${resource} was not found"
-    return "${__BASHIO_EXIT_NOK}"
-  fi
-
-  if [[ "${status}" -eq 405 ]]; then
-    bashio::log.error "Requested resource ${resource} was called using an" \
-        "unallowed method."
-    return "${__BASHIO_EXIT_NOK}"
-  fi
-
-  if [[ $(bashio::jq "${response}" ".result") = "error" ]]; then
-    bashio::log.error "Got unexpected response from the API:" \
-        "$(bashio::jq "${response}" '.message // empty')"
-    return "${__BASHIO_EXIT_NOK}"
-  fi
-
-  if [[ "${status}" -ne 200 ]]; then
-    bashio::log.error "Unknown HTTP error occurred"
-    return "${__BASHIO_EXIT_NOK}"
-  fi
-
-  echo "${response}"
-  return "${__BASHIO_EXIT_OK}"
-}
 
 bashio::log.info "Starting Bitping Service..."
 
-parameters+=(--server)
-credentials_dir="/root/.bitping/"
-credentials_file="$credentials_dir""credentials.json"
-
-if ! bashio::fs.directory_exists "${credentials_dir}"; then
-  mkdir -p "${credentials_dir}"
+if [[ "$(bashio::config 'email')" == "" || "$(bashio::config 'password')" == "" ]]; then
+  bashio::exit.nok "Bitping email and/or password are empty."
 fi
 
-if ! bashio::fs.file_exists "${credentials_file}"; then
-  result=$(bitping::login)
-  bashio::log.debug "API Token: $(bashio::jq "${result}" '.token')"
-  bashio::log.debug "API Id: $(bashio::jq "${result}" '.id')"
-  bashio::log.debug "API Name: $(bashio::jq "${result}" '.name')"
-  bashio::log.debug "API Error: $(bashio::jq "${result}" '.error')"
+export BITPING_EMAIL="$(bashio::config 'email')"
+export BITPING_PASSWORD="$(bashio::config 'password')"
 
-  error=$(bashio::jq "${result}" '.error')
-
-  # Create credentials file with content
-  if [[ -n "${error}" ]]; then
-    bashio::log.info "Bitping credentials.json file doesn't exist. Creating..."
-
-    credentials_json_data=$(\
-      bashio::var.json \
-          id "$(bashio::jq "${result}" '.id')" \
-          name "$(bashio::jq "${result}" '.name')" \
-          email "$(bashio::config 'email')" \
-          token "$(bashio::jq "${result}" '.token')" \
-          error "" \
-    )
-
-    echo $credentials_json_data > "${credentials_file}"
-
-    bashio::log.info "Bitping credentials.json created."
-    bashio::log.debug "credentials.json file content: $(more ${credentials_file})"
-  else
-    bashio::exit.nok "Bitping credentials.json creation failed."
-  fi
-fi
-
-if bashio::fs.file_exists "${credentials_file}"; then
-  bashio::log.info "Bitping credentials.json file found."
-  if [[ $(uname -m) = "armv7l" || $(uname -m) = "aarch64" ]]; then
-    bashio::log.info "Starting Bitping arm Service..."
-    /opt/bitping/release/bitping-node-armv7-linux "${parameters[@]}"
-  else
-    bashio::log.info "Starting Bitping amd64 Service..."
-    /opt/bitping/release/bitping-node-amd64-linux "${parameters[@]}"
-  fi
-fi
-
-if bashio::fs.file_exists "${credentials_file}"; then
-  bashio::log.info "Bitping credentials.json file removed."
-  rm -rf /root/.bitping/credentials.json
-fi
+/opt/bitping/bitpingd

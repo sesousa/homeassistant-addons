@@ -1,10 +1,27 @@
 #!/bin/bash
 
 ## Bitping install
+if ! response=$(curl --silent --show-error \
+    --request "GET" \
+    -H "Content-Type: application/json" \
+    "https://releases.bitping.com/bitpingd/update.json"
+); then
+    echo "${response}"
+    echo "Something went wrong retrieving the releases. Exiting..."
+    exit 1
+fi
+
+VERSION=$(echo "${response}" | jq --raw-output .version)
+
+if [[ "${VERSION+x}" == "" ]]; then
+    echo "No version found."
+    exit 1
+fi
+
+OS=$(uname)
+ARCH="${OS,,}-$(uname -m)"
+URL=$(echo "${response}" | jq --raw-output ".platforms.\"$ARCH\".url")
+
 mkdir -p /opt/bitping
 
-if [[ $(uname -m) = "armv7l" || $(uname -m) = "aarch64" ]]; then
-  wget https://downloads.bitping.com/node/armv7.zip && unzip armv7.zip -d /opt/bitping/ && rm -rf armv7.zip
-else
-  wget https://downloads.bitping.com/node/linux.zip && unzip linux.zip -d /opt/bitping/ && rm -rf linux.zip
-fi
+wget -c "$URL" -O - | tar -xz -C /opt/bitping/ && rm -rf *.tar.gz
