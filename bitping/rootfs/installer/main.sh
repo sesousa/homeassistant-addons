@@ -11,6 +11,8 @@ if ! response=$(curl --silent --show-error \
     exit 1
 fi
 
+echo "$response"
+
 VERSION=$(echo "${response}" | jq --raw-output .version)
 
 if [[ "${VERSION+x}" == "" ]]; then
@@ -21,6 +23,8 @@ fi
 OS=$(uname)
 ARCH="${OS,,}-$(uname -m)"
 URL=$(echo "${response}" | jq --raw-output ".platforms.\"$ARCH\".url")
+
+echo "$URL"
 
 mkdir -p /opt/bitping
 
