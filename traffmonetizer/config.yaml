@@ -10,7 +10,6 @@ arch:
   - amd64
   - i386
 init: false
-apparmor: true
 options:
   token: null
   device: "ha-device"
