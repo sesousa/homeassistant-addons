@@ -1,7 +1,6 @@
-ARG BUILD_FROM
-FROM $BUILD_FROM
+FROM repocket/repocket:1.1.46
 
-ENV NODE_VERSION 19.9.0
+ENV NODE_VERSION 16.18.1
 
 RUN apk add --update curl \
   bash \
@@ -20,19 +19,19 @@ RUN apk add --update curl \
   findutils \
   python3
 
-ENV NVM_DIR /root/.nvm
+# ENV NVM_DIR /root/.nvm
 
-SHELL ["/bin/bash", "-o", "pipefail", "-c"]
+# SHELL ["/bin/bash", "-o", "pipefail", "-c"]
 
-RUN touch ~/.bashrc && chmod +x ~/.bashrc
+# RUN touch ~/.bashrc && chmod +x ~/.bashrc
 
-RUN curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.1/install.sh | bash
+# RUN curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.1/install.sh | bash
 
-RUN [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
-RUN [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
+# RUN [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+# RUN [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
 
-RUN . ~/.nvm/nvm.sh && nvm install $NODE_VERSION \
-  && nvm use $NODE_VERSION && source ~/.bashrc
+# RUN . ~/.nvm/nvm.sh && nvm install $NODE_VERSION \
+  # && nvm use $NODE_VERSION && source ~/.bashrc
 
 # Execute during the build of the image
 ARG TEMPIO_VERSION BUILD_ARCH
