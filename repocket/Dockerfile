@@ -1,4 +1,4 @@
-FROM repocket/repocket:1.1.46
+FROM registry.hub.docker.com/repocket/repocket:1.1.46
 
 ENV NODE_VERSION 16.18.1
 
