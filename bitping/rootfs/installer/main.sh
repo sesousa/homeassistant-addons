@@ -21,10 +21,18 @@ if [[ "${VERSION+x}" == "" ]]; then
 fi
 
 OS=$(uname)
-echo "OS = $OS"
-ARCH="${OS,,}-$(uname -m)"
-echo "ARCH = $ARCH"
-URL=$(echo "${response}" | jq --raw-output ".platforms.\"$ARCH\".url")
+echo "${OS}"
+OS=${OS,,}
+ARCH="$(uname -m)"
+
+if [ "$ARCH" == "armv7l" ]; then
+    ARCH="armv7"
+fi
+
+FULL_ARCH="${OS}-${ARCH}"
+echo "${FULL_ARCH}"
+
+URL=$(echo "${response}" | jq --raw-output ".platforms.\"$FULL_ARCH\".url")
 echo "URL = $URL"
 
 mkdir -p /opt/bitping
