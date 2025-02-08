@@ -1,7 +1,7 @@
 ARG BUILD_FROM
 FROM $BUILD_FROM
 
-ENV NODE_VERSION 17.9.1
+ENV NODE_VERSION 18.20.6
 
 RUN apk add --update curl \
   bash \
